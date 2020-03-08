@@ -66,6 +66,10 @@ export class AppComponent {
   // numbers.subscribe(x => console.log(x));
 
   openDialog() {
-    this.dialog.open(EditCourseComponent);
+    this.dialog.open(EditCourseComponent,{
+      data: { courseId : 1}
+    })
+    .afterClosed()
+    .subscribe(result => console.log(result));
   }
 }
