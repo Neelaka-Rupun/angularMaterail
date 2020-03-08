@@ -19,11 +19,13 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDialogModule } from '@angular/material/dialog';
+import { EditCourseComponent } from './edit-course/edit-course.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    EditCourseComponent,
 
   ],
   imports: [

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Observable, timer } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
+import { EditCourseComponent } from './edit-course/edit-course.component';
 
 
 
@@ -64,9 +65,7 @@ export class AppComponent {
   // // tslint:disable-next-line: no-unused-expression
   // numbers.subscribe(x => console.log(x));
 
-  // openDialog() {
-  //   this.dialog.open(EditCourseComponent)
-  //   .afterClosed()
-  //   .subscribe(result => console.log(result));
-  // }
+  openDialog() {
+    this.dialog.open(EditCourseComponent);
+  }
 }
